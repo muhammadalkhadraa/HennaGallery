@@ -1,0 +1,156 @@
+export interface GalleryItem {
+  id: string;
+  title: string;
+  category: "bridal" | "nubian" | "hands" | "feet" | "custom";
+  src: string;
+  width: number;
+  height: number;
+  description: string;
+}
+
+export const galleryCategories = [
+  { id: "all", name: "All Designs" },
+  { id: "bridal", name: "Bridal Henna" },
+  { id: "nubian", name: "Nubian Henna" },
+  { id: "hands", name: "Hand Designs" },
+  { id: "feet", name: "Feet Designs" },
+  { id: "custom", name: "Custom Designs" },
+];
+
+export const galleryItems: GalleryItem[] = [
+  {
+    id: "g1",
+    title: "Intricate Bridal Henna",
+    category: "bridal",
+    src: "/gallery-bridal.png",
+    width: 600,
+    height: 750,
+    description: "Detailed, rich mahogany bridal henna featuring traditional symbols of blessing and love.",
+  },
+  {
+    id: "g2",
+    title: "Traditional Nubian Geometrics",
+    category: "nubian",
+    src: "/gallery-nubian.png",
+    width: 600,
+    height: 480,
+    description: "Authentic chevron and diamond patterns representing Nubian heritage and architectural geometry.",
+  },
+  {
+    id: "g3",
+    title: "Elegant Floral Hand Vines",
+    category: "hands",
+    src: "/gallery-hands.png",
+    width: 600,
+    height: 750,
+    description: "Soft, flowing floral motifs extending gracefully from fingers down to the wrist.",
+  },
+  {
+    id: "g4",
+    title: "Mandala Foot Accent",
+    category: "feet",
+    src: "/gallery-feet.png",
+    width: 600,
+    height: 480,
+    description: "Intricate mandala designs decorating the feet, perfect for beach celebrations and summer events.",
+  },
+  {
+    id: "g5",
+    title: "Artistic Shoulder Swirls",
+    category: "custom",
+    src: "/gallery-custom.png",
+    width: 600,
+    height: 750,
+    description: "Custom modern composition incorporating natural floral and bird-inspired motifs.",
+  },
+  {
+    id: "wa1",
+    title: "Delicate Palm Pattern",
+    category: "hands",
+    src: "/WhatsApp Image 2026-06-23 at 11.36.46 AM.jpeg",
+    width: 600,
+    height: 750,
+    description: "Detailed hand henna design featuring traditional elements and floral lines.",
+  },
+  {
+    id: "wa2",
+    title: "Classic Nubian Finger Vines",
+    category: "hands",
+    src: "/WhatsApp Image 2026-06-23 at 11.36.47 AM.jpeg",
+    width: 600,
+    height: 750,
+    description: "Beautiful henna vine drawing spreading across fingers with elegant dots.",
+  },
+  {
+    id: "wa3",
+    title: "Ornate Wrist Ornament",
+    category: "hands",
+    src: "/WhatsApp Image 2026-06-23 at 11.36.47 AM (1).jpeg",
+    width: 600,
+    height: 750,
+    description: "A gorgeous bracelet-style henna art decorating the wrist and back of the hand.",
+  },
+  {
+    id: "wa4",
+    title: "Intricate Backhand Mandala",
+    category: "hands",
+    src: "/WhatsApp Image 2026-06-23 at 11.36.48 AM.jpeg",
+    width: 600,
+    height: 750,
+    description: "Traditional center mandala drawing with matching detailed patterns on fingers.",
+  },
+  {
+    id: "wa5",
+    title: "Flowing Floral Trails",
+    category: "hands",
+    src: "/WhatsApp Image 2026-06-23 at 11.36.48 AM (1).jpeg",
+    width: 600,
+    height: 750,
+    description: "Graceful leaf and flower trails moving dynamically from forearm to hand.",
+  },
+  {
+    id: "wa6",
+    title: "Geometric Nubian Bands",
+    category: "hands",
+    src: "/WhatsApp Image 2026-06-23 at 11.36.48 AM (2).jpeg",
+    width: 600,
+    height: 750,
+    description: "Traditional clean geometric lines decorating the hand and fingers.",
+  },
+  {
+    id: "wa7",
+    title: "Bridal Floral Details",
+    category: "hands",
+    src: "/WhatsApp Image 2026-06-23 at 1.00.06 PM.jpeg",
+    width: 600,
+    height: 750,
+    description: "Fine, luxury detailed bridal style hand henna pattern.",
+  },
+  {
+    id: "wa8",
+    title: "Modern Leafy Vines",
+    category: "hands",
+    src: "/WhatsApp Image 2026-06-23 at 1.00.06 PM (1).jpeg",
+    width: 600,
+    height: 750,
+    description: "Minimalist modern leafy henna trail wrapping around the fingers.",
+  },
+  {
+    id: "wa9",
+    title: "Symmetrical Palm Mandala",
+    category: "hands",
+    src: "/WhatsApp Image 2026-06-23 at 1.00.06 PM (2).jpeg",
+    width: 600,
+    height: 750,
+    description: "A detailed circular mandala design centered on the palm representing unity.",
+  },
+  {
+    id: "wa10",
+    title: "Delicate Finger Detailing",
+    category: "hands",
+    src: "/WhatsApp Image 2026-06-23 at 1.00.06 PM (3).jpeg",
+    width: 600,
+    height: 750,
+    description: "Detailed linear patterns on fingers with a matching wrist accent.",
+  },
+];
