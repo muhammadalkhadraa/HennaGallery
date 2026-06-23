@@ -1,5 +1,1 @@
-**/node_modules/
-.next/
-out/
-.DS_Store
-.env*
+# Node modules\n**/node_modules/\n# Next.js build artifacts\n.next/\nout/\n# macOS metadata\n.DS_Store\n# Environment files\n.env*\n# Ensure .gitignore itself is not ignored\n!.gitignore\n
