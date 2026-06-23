@@ -1,0 +1,114 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: var(--font-serif-cormorant), serif;
+  --font-sans: var(--font-sans-poppins), sans-serif;
+  
+  --color-coffee: #5A3928;
+  --color-chocolate: #3A2418;
+  --color-sand: #E7D3C2;
+  --color-cream: #F5E8DA;
+  --color-henna: #7A4E33;
+  --color-gold: #C9A97A;
+  
+  --color-gold-dark: #B59567;
+  --color-coffee-dark: #4A2E20;
+  
+  --animate-float-slow: float 8s ease-in-out infinite;
+  --animate-float-medium: float 6s ease-in-out infinite;
+  --animate-spin-slow: spin 25s linear infinite;
+  --animate-fade-in-up: fadeInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0) rotate(0deg);
+    }
+    50% {
+      transform: translateY(-10px) rotate(2deg);
+    }
+  }
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
+
+:root {
+  --background: #F5E8DA; /* Warm Cream */
+  --foreground: #3A2418; /* Dark Chocolate Brown */
+  
+  --primary-coffee: #5A3928;
+  --primary-chocolate: #3A2418;
+  --secondary-sand: #E7D3C2;
+  --secondary-cream: #F5E8DA;
+  --accent-henna: #7A4E33;
+  --accent-gold: #C9A97A;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans-poppins), Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Custom Utilities */
+
+@utility parchment-bg {
+  background-color: #F5E8DA;
+  background-image: 
+    radial-gradient(circle at 50% 20%, rgba(245, 232, 218, 0.3) 0%, rgba(231, 211, 194, 0.4) 100%),
+    url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.025'/%3E%3C/svg%3E");
+}
+
+@utility dark-parchment-bg {
+  background-color: #3A2418;
+  background-image: 
+    radial-gradient(circle at 50% 50%, rgba(58, 36, 24, 0.8) 0%, rgba(35, 20, 13, 0.95) 100%),
+    url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.04'/%3E%3C/svg%3E");
+}
+
+@utility text-shadow-gold {
+  text-shadow: 0 2px 10px rgba(201, 169, 122, 0.3);
+}
+
+@utility text-shadow-dark {
+  text-shadow: 0 2px 10px rgba(58, 36, 24, 0.4);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #F5E8DA;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #7A4E33;
+  border: 2px solid #F5E8DA;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #5A3928;
+}
+
+/* Custom selection */
+::selection {
+  background-color: #7A4E33;
+  color: #F5E8DA;
+}
+
+/* Smooth Scrolling */
+html {
+  scroll-behavior: smooth;
+}
